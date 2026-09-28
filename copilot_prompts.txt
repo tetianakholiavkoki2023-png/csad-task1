@@ -1,0 +1,2 @@
+Write a minimal C++ Hello World program for main.cpp. Use iostream. Only provide the raw C++ code
+Create a minimal README.md with placeholders for Full Name, Group, and Variant.
