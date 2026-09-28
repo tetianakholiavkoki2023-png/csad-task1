@@ -4,3 +4,11 @@ Create a minimal README.md with placeholders for Full Name, Group, and Variant.
 
 Task2/
 Write a CMakeLists.txt file for a C++ project named HelloWorld. It should build an executable named 'hello' from main.cpp. Provide only the CMake code
+
+Task3/
+Write math_operations.h with header guards and an 'int add(int a, int b);' declaration. Then write math_operations.cpp to implement it.
+
+Write Google Tests for the add() function from "../math_operations.h". Add one test for positive numbers and one for negative numbers.
+
+Update CMakeLists.txt to add GoogleTest via FetchContent. Keep the 'hello' executable. Add a 'unit_tests' executable built from tests/unit_tests.cpp and math_operations.cpp. 
+Link it to gtest_main, use enable_testing(), and add_test().
