@@ -18,3 +18,6 @@ Write a bash script named ci.sh that stops on errors (set -e). It should create 
 
 Generate a standard .gitignore file for a C++ CMake project. Ensure the 'build/' directory and IDE files (like .vscode/) are ignored.
 
+Task5/
+Write a GitHub Actions workflow YAML file. Trigger on push and pull_request to 'develop' and 'master' branches. Job name: cross_build. Use strategy matrix for runs-on: [ubuntu-latest, windows-latest, macos-latest]. 
+Steps: 1) Checkout code v4. 2) Run bash ./ci.sh (ensure it runs in bash shell on all OS). 3) Upload artifact named "executable-${{ matrix.os }}" containing the built 'hello' executable (handle both hello and hello.exe).
