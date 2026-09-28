@@ -12,3 +12,9 @@ Write Google Tests for the add() function from "../math_operations.h". Add one t
 
 Update CMakeLists.txt to add GoogleTest via FetchContent. Keep the 'hello' executable. Add a 'unit_tests' executable built from tests/unit_tests.cpp and math_operations.cpp. 
 Link it to gtest_main, use enable_testing(), and add_test().
+
+Task4/
+Write a bash script named ci.sh that stops on errors (set -e). It should create a 'build' directory, navigate into it, run 'cmake ..', run 'cmake --build .', and finally run 'ctest --output-on-failure'. Simple formatting.
+
+Generate a standard .gitignore file for a C++ CMake project. Ensure the 'build/' directory and IDE files (like .vscode/) are ignored.
+
