@@ -1,2 +1,6 @@
+Task1/
 Write a minimal C++ Hello World program for main.cpp. Use iostream. Only provide the raw C++ code
 Create a minimal README.md with placeholders for Full Name, Group, and Variant.
+
+Task2/
+Write a CMakeLists.txt file for a C++ project named HelloWorld. It should build an executable named 'hello' from main.cpp. Provide only the CMake code
