@@ -1,2 +1,28 @@
+Task1/
 Write a minimal C++ Hello World program for main.cpp. Use iostream. Only provide the raw C++ code
 Create a minimal README.md with placeholders for Full Name, Group, and Variant.
+
+Task2/
+Write a CMakeLists.txt file for a C++ project named HelloWorld. It should build an executable named 'hello' from main.cpp. Provide only the CMake code
+
+Task3/
+Write math_operations.h with header guards and an 'int add(int a, int b);' declaration. Then write math_operations.cpp to implement it.
+
+Write Google Tests for the add() function from "../math_operations.h". Add one test for positive numbers and one for negative numbers.
+
+Update CMakeLists.txt to add GoogleTest via FetchContent. Keep the 'hello' executable. Add a 'unit_tests' executable built from tests/unit_tests.cpp and math_operations.cpp. 
+Link it to gtest_main, use enable_testing(), and add_test().
+
+Task4/
+Write a bash script named ci.sh that stops on errors (set -e). It should create a 'build' directory, navigate into it, run 'cmake ..', run 'cmake --build .', and finally run 'ctest --output-on-failure'. Simple formatting.
+
+Generate a standard .gitignore file for a C++ CMake project. Ensure the 'build/' directory and IDE files (like .vscode/) are ignored.
+
+Task5/
+Write a GitHub Actions workflow YAML file. Trigger on push and pull_request to 'develop' and 'master' branches. Job name: cross_build. Use strategy matrix for runs-on: [ubuntu-latest, windows-latest, macos-latest]. 
+Steps: 1) Checkout code v4. 2) Run bash ./ci.sh (ensure it runs in bash shell on all OS). 3) Upload artifact named "executable-${{ matrix.os }}" containing the built 'hello' executable (handle both hello and hello.exe).
+
+Action fix
+fix failed window action with error: LINK : warning LNK4098: defaultlib 'LIBCMTD' conflicts with use of other libs; use /NODEFAULTLIB:library [D:\a\csad-task1\csad-task1\build\unit_tests.vcxproj]
+D:\a\csad-task1\csad-task1\build\Debug\unit_tests.exe : fatal error LNK1169: one or more multiply defined symbols found [D:\a\csad-task1\csad-task1\build\unit_tests.vcxproj]
+Error: Process completed with exit code 1.
